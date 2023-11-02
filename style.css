@@ -1,0 +1,330 @@
+html, body{
+  height: 100%;
+  font-size: 62.5%; /* 75px - 7.5rem */
+}
+
+body {
+  background-color: #F7EBEC;
+   margin: 0;
+
+}
+
+ .footer{
+   margin-top: 10%;	 
+ }
+ .footer p {
+  font-family: 'Roboto', sans-serif;
+  color: #2A0800;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.navbar{
+
+  margin:auto 0; 
+  padding: 0; 
+  list-style: none; 
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.navbar li { 
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+  
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.25em;
+  font-size: 1.8rem;
+  color:#2A0800;
+  font-family: 'Roboto', sans-serif;
+  display: inline-block;
+  padding: 15px 30px;
+  position: relative;
+}
+
+.navbar h1 a{
+  color:#2A0800;
+  text-align: center;
+  font-family: 'Roboto', sans-serif; 
+  font-size: 7.5rem;
+  width:300px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.00em;
+}
+
+.navbar a:hover {
+  background-color: #f4dbd8;
+  opacity: 0.5;
+}
+
+.navbar h1 a:hover {
+  background-color: transparent;
+  opacity: 0.5;
+}
+
+
+.about, .services{
+	  display: flex;
+}
+
+.about p, .services p, .contact p, .thankyou p{
+  font-family: 'Arapey', serif;
+  color: #2A0800;
+  text-align: left;
+  font-size: 2.0rem;
+  margin-left: 320px;
+  max-width: 500px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+/* IMAGES */
+.milk {
+  width:300px;
+  height:400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.milk2,.milk3 {
+  width:300px;
+  height:400px;
+  display: block;
+  float: right;
+  margin-right: 300px;
+  max-width: 500px;
+  margin-left: 90px;
+}
+
+.work,.work2,.work3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+  margin-bottom: 15px;
+}
+
+.work:hover, .work2:hover, .work3:hover {
+  opacity: 0.5;
+}
+
+/*CONTACT FORM*/
+ /* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  font-family: 'Arapey', serif;
+  color: #2A0800;
+  text-align: left;
+  font-size: 1.8rem;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-family: 'Arapey', serif;
+  color: #2A0800;
+  text-align: left;
+  font-size: 1.8rem;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #f4dbd8;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  float: right;
+  font-family: 'Arapey', serif;
+  color: #2A0800;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/* Style the container */
+.container {
+  width:500px;
+  /*height:500px;*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	
+   body,.pagecontent{
+	min-height: 100vh;
+  }
+  
+  .pagecontent{
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+  }
+  
+  .footer p {
+  font-size: 1.0rem;
+  }
+	
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+	float: none;	
+  }
+  
+  .container {
+  width:300px;
+  height:50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  
+  .milk,.milk2,.milk3{
+  display: none;
+  }
+  
+  .about{
+   margin-bottom: 100px;
+  }
+  
+  .services{
+	  margin-top: 20px;
+  }
+
+  .work,.work2,.work3 {
+  max-width: 300px;
+  }
+  
+  .portfolio{
+	margin-top: 50px;
+  }
+} 
+
+@media only screen and (max-width: 1024px){
+ 
+   body,.pagecontent{
+	min-height: 100vh;
+  }
+  
+  .pagecontent{
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: space-between;
+  }
+  
+  .footer p {
+  font-size: 1.2rem;
+  }
+  
+   .navbar{
+	display: block;
+	width: 100%;
+	/*flex-direction: column; use for index page*/
+   }
+ 
+   .navbar li{
+	display: inline;
+   }
+   
+   .about, .services{
+	  display: block;
+	  text-align: center;
+	  margin-bottom: 100px;
+   }
+
+
+   .milk2,.milk3{
+  display: none;
+   }
+   
+   .about p, .services p,.contact p, .thankyou p{
+  font-family: 'Arapey', serif;
+  color: #2A0800;
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 0 auto;
+  padding: 10px 10px;
+
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  }
+  
+  .container {
+   margin-top: 50px;
+  }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 1024px){
+	
+  .work,.work2, .work3{
+  max-width: 400px;
+  }
+  
+   .portfolio{
+	margin-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1282px){
+	
+  .about p, .services p,.contact p, .thankyou p{
+  margin-left: 160px;
+  max-width: 500px; 
+  }
+  
+  
+  .milk2,.milk3 {
+  width:300px;
+  height:400px;
+  display: block;
+  float: right;
+  margin-right: 160px;
+  max-width: 500px;
+  margin-left: 90px;
+}
+
+
+}
